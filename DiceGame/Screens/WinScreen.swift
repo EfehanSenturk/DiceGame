@@ -8,11 +8,29 @@
 import SwiftUI
 
 struct WinScreen: View {
+    var gamerName : String
+    @State private var showLoginScreen = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+         
+            ZStack{
+                AppBackground()
+                VStack(spacing : 40) {
+                    Text("You are winner \(gamerName)")
+                        .font(.title)
+                    ButtonView(buttonTitle: "Yeniden Oyna") {
+                        showLoginScreen = true
+                    }
+                }
+            }.navigationBarBackButtonHidden()
+            .navigationDestination(isPresented: $showLoginScreen) {
+                LoginScreen()
+            }
+        }
+
     }
 }
 
 #Preview {
-    WinScreen()
+    WinScreen(gamerName: "")
 }

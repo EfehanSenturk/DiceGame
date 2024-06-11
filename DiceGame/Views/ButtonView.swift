@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct ButtonView: View {
+    var buttonTitle = ""
+    var buttonFunc : () -> Void
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(action: {
+            buttonFunc()
+        }, label: {
+            Text(buttonTitle)
+                .padding(.horizontal,50)
+                .padding()
+                .foregroundStyle(.black)
+                .bold()
+                .background(Color("textFieldBackground"))
+                .cornerRadius(20)
+        })
     }
 }
 
 #Preview {
-    ButtonView()
+    ButtonView(buttonFunc: {})
 }

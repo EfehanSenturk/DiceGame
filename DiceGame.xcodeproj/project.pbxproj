@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		9E12E1982C14739E005628AD /* DiceGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12E1972C14739E005628AD /* DiceGameApp.swift */; };
-		9E12E19A2C14739E005628AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12E1992C14739E005628AD /* ContentView.swift */; };
+		9E12E19A2C14739E005628AD /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12E1992C14739E005628AD /* LoginScreen.swift */; };
 		9E12E19C2C14739E005628AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E12E19B2C14739E005628AD /* Assets.xcassets */; };
 		9E12E19F2C14739E005628AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E12E19E2C14739E005628AD /* Preview Assets.xcassets */; };
+		9E12E1A92C147446005628AD /* AppBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12E1A82C147446005628AD /* AppBackground.swift */; };
+		9E12E1AB2C1476FF005628AD /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12E1AA2C1476FF005628AD /* TextFieldView.swift */; };
+		9E12E1AD2C1479BE005628AD /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12E1AC2C1479BE005628AD /* ButtonView.swift */; };
+		9E12E1AF2C148119005628AD /* GameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12E1AE2C148119005628AD /* GameScreen.swift */; };
+		9E12E1B12C148327005628AD /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12E1B02C148327005628AD /* GameController.swift */; };
+		9E12E1B32C18E645005628AD /* WinScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E12E1B22C18E645005628AD /* WinScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9E12E1942C14739E005628AD /* DiceGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiceGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E12E1972C14739E005628AD /* DiceGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceGameApp.swift; sourceTree = "<group>"; };
-		9E12E1992C14739E005628AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9E12E1992C14739E005628AD /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		9E12E19B2C14739E005628AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E12E19E2C14739E005628AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9E12E1A82C147446005628AD /* AppBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBackground.swift; sourceTree = "<group>"; };
+		9E12E1AA2C1476FF005628AD /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		9E12E1AC2C1479BE005628AD /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		9E12E1AE2C148119005628AD /* GameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreen.swift; sourceTree = "<group>"; };
+		9E12E1B02C148327005628AD /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		9E12E1B22C18E645005628AD /* WinScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,10 @@
 		9E12E1962C14739E005628AD /* DiceGame */ = {
 			isa = PBXGroup;
 			children = (
+				9E12E1A72C1473C2005628AD /* ViewController */,
+				9E12E1A62C1473B9005628AD /* Views */,
+				9E12E1A52C1473AD005628AD /* Screens */,
 				9E12E1972C14739E005628AD /* DiceGameApp.swift */,
-				9E12E1992C14739E005628AD /* ContentView.swift */,
 				9E12E19B2C14739E005628AD /* Assets.xcassets */,
 				9E12E19D2C14739E005628AD /* Preview Content */,
 			);
@@ -65,6 +79,34 @@
 				9E12E19E2C14739E005628AD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9E12E1A52C1473AD005628AD /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				9E12E1992C14739E005628AD /* LoginScreen.swift */,
+				9E12E1AE2C148119005628AD /* GameScreen.swift */,
+				9E12E1B22C18E645005628AD /* WinScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		9E12E1A62C1473B9005628AD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9E12E1A82C147446005628AD /* AppBackground.swift */,
+				9E12E1AA2C1476FF005628AD /* TextFieldView.swift */,
+				9E12E1AC2C1479BE005628AD /* ButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9E12E1A72C1473C2005628AD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9E12E1B02C148327005628AD /* GameController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E12E19A2C14739E005628AD /* ContentView.swift in Sources */,
+				9E12E1B32C18E645005628AD /* WinScreen.swift in Sources */,
+				9E12E19A2C14739E005628AD /* LoginScreen.swift in Sources */,
+				9E12E1AF2C148119005628AD /* GameScreen.swift in Sources */,
+				9E12E1A92C147446005628AD /* AppBackground.swift in Sources */,
+				9E12E1AD2C1479BE005628AD /* ButtonView.swift in Sources */,
+				9E12E1AB2C1476FF005628AD /* TextFieldView.swift in Sources */,
 				9E12E1982C14739E005628AD /* DiceGameApp.swift in Sources */,
+				9E12E1B12C148327005628AD /* GameController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

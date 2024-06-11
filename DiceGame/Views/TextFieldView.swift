@@ -8,11 +8,21 @@
 import SwiftUI
 
 struct TextFieldView: View {
+    @Binding var username : String
+    var placeholder = ""
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TextField(text : $username) {
+            Text(placeholder)
+                .font(.title2)
+                .bold()
+        }
+        .padding()
+        .background(Color("textFieldBackground"))
+        .shadow(radius: 15)
+        .cornerRadius(20)
     }
 }
 
 #Preview {
-    TextFieldView()
+    TextFieldView(username: .constant(""))
 }
